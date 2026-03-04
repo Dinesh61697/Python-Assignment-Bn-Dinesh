@@ -1,5 +1,5 @@
 
-Day-7:
+##Day-7:Assignment
 
 #1.Ordered: 
 
@@ -42,7 +42,7 @@ print('elements[0:4]',elements)
 
 elements.append(60)
 print("after append",elements)
-                              
+##                              output:Error
 
  
 
@@ -50,4 +50,5 @@ print("after append",elements)
 
 elements.insert(25)
 print('after insert',elements)
+##                                output:Error
                               
