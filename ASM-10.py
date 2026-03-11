@@ -1,56 +1,66 @@
-#1.no para, no return type
+##1.Find the biggest number:
 
-def biggest_no():
-    element=[100,200,300,400,550,600]
-    biggest=element[0]
+biggest = 0
 
-    for num in element:
-        if num>biggest:
-            biggest=num
-    print("Biggest number is :",biggest)
+for i in range(5):
+    num = int(input("Enter a number: "))
+
+
+    if num > biggest:
+        biggest = num
+
+print("biggest number is:", biggest)
+
+
+
+##2.Factorial method:
+
+
+n = int(input("Enter a number: "))
+fact = 1
+
+while n > 0:
+    fact = fact*n
+    n = n-1
+
+print("Factorial is:", fact)
+
+
+##3.checking a prime number:
+
+n = int(input("enter a number: "))
+for i in range(2, n):
+    if n % i ==0:
+        print("not a prime number")
+        break
+    else:
+        print("prime number")
+
+#4.Count Digits in a Number
+
+number = int(input("Enter a number :"))
+
+count =0
+while number>0:
+    number=number //10
+    count=count+1
+print(count)
+
+
+
+#5.grade checker
+
+mark = int(input("Enter a number: "))
+
+if  mark<=100 and mark >=90:
+    print("Grade A")
+elif mark<90 and mark>=70:
+    print("Grade B")
+elif mark<=69 and mark>=50:
+    print("Grade c")
+elif mark<50:
+    print("Fail")
+else:
+    print("Invalid")
     
-biggest_no()
 
-
-#2.with para , no return type
-
-def biggest_no(elements):
-    biggest= elements[0]
-
-    for num in elements:
-        if num>biggest:
-            biggest= num
-    print("Biggest numer is :",biggest)
-    
-elements=[100,2000,300,409,500]
-biggest_no(elements)
-    
-    
-
-#3.no para , with return type
-
-def biggest_no():
-    element=[10000,2000,3003,400,5000]
-    biggest= element[0]
-
-    for num in element:
-        if num>biggest:
-            biggest= num
-    return biggest
-result= biggest_no()
-print("Biggest number is :",result)
-
-
-#4.with para, with return type
-
-def biggest_no(elements):
-    biggest=elements[0]
-
-    for num in elements:
-        if num>biggest:
-            biggest= num
-    return biggest
-
-elements=[2022,2023,2024,2025,2026,2027]
-result = biggest_no(elements)
-print("Biggest number is :",result)
