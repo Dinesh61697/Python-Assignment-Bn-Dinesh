@@ -11,7 +11,7 @@ def write_student():
 
 # Function to read and display student details
 def read_student():
-    time.sleep(2)   # wait for writing to finish
+    time.sleep(2)  
     with open("students.txt", "r") as f:
         data = f.read()
         print("Student details from file:")
@@ -21,11 +21,9 @@ def read_student():
 t1 = threading.Thread(target=write_student)
 t2 = threading.Thread(target=read_student)
 
-# Starting threads
 t1.start()
 t2.start()
 
-# Waiting for threads to finish
 t1.join()
 t2.join()
 
